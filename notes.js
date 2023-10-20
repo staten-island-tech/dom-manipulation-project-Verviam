@@ -5,6 +5,17 @@ const DOMSelectors = {
 };
 
 // console.log(DOMSelectors.firstName);
+function makeAlbum (){
+
+}
+
+function addCard(Album){}
+document.querySelector(".gallery")
+.insertAdjacentHTML("afterbegin", `<div class="card"> <div class="card-title"> ${Album.name}</div></div>`);
+DOMSelectors.form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+})  
 
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
