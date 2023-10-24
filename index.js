@@ -1,4 +1,7 @@
+const DOMSelectors  = { // {} encloses objects
 
+
+}
 
 
 // Using JavaScript you will allow users to input information into a form. The
