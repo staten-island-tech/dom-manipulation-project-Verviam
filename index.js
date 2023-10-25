@@ -1,4 +1,3 @@
-
 const DOMSelectors  = { // {} encloses objects
     form: document.querySelector("#form"),
     text: document.querySelector(".text-box"),
