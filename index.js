@@ -1,5 +1,7 @@
 const DOMSelectors  = { // {} encloses objects
-
+    form: document.querySelector("#form"),
+    firstName: document.querySelector(".first-name"),
+    h2: document.querySelectorAll("h2")
 
 }
 
