@@ -1,9 +1,26 @@
+
 const DOMSelectors  = { // {} encloses objects
     form: document.querySelector("#form"),
     text: document.querySelector(".text-box"),
     h2: document.querySelectorAll("h2")
 
 }
+
+function addReminder(reminder) {
+    document.querySelector(".reminders")
+    .insertAdjacentHTML("afterbegin", `<div class="card">< div class="card-title"> ${reminder.title}</div></div>` )
+    DOMSelectors.form.addEventListener("submit", function(event)) {
+    event.preventDefault();
+    }
+}
+
+DOMSelectors.form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  console.log(DOMSelectors.firstName.value);
+  DOMSelectors.h2.forEach(
+    (el) => (el.textContent = DOMSelectors.firstName.value)
+  );
+});
 
 
 // Using JavaScript you will allow users to input information into a form. The

@@ -1,5 +1,10 @@
-body {
-    font-family:'Courier New', Courier, monospace
+* {
+    font-family:'Courier New', Courier, monospace;
+    background-color: #279EFF;
+    color: #0C356A;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 50px 20px;
 } 
 
 #form {
