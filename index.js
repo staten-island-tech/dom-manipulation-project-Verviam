@@ -11,8 +11,13 @@ const DOMSelectors  = {
 
 function addReminder(reminder) {
   const remindersContainer = DOMSelectors.reminder
-  remindersContainer.insertAdjacentHTML("afterbegin", `<div class="reminder-box">< div class="reminder-title-h2"> ${reminder.title}</div> 
-  <button class="removeReminder">Remove </button> </div>`)
+  remindersContainer.insertAdjacentHTML("afterbegin", 
+  `<div class="reminder-box">
+  <h2 class="reminder-title-h2"></h2>
+  <p class="reminder-text"></p>
+  </div>
+  ${reminder.title}
+  <button class="removeReminder">Remove </button>`)
   DOMSelectors.form.addEventListener("submit", function(event) {
     event.preventDefault();
   });
