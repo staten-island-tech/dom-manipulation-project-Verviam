@@ -1,8 +1,8 @@
 const DOMSelectors  = { // {} encloses objects
-    form: document.querySelector("#form"),
-    text: document.querySelector(".text-box"),
-    h2: document.querySelectorAll("h2")
-
+    title: document.getElementById("title-box"),
+    reminder: document.getElementById("reminder-box"),
+    image: document.getElementById("img-box")
+    
 }
 
 function addReminder(reminder) {

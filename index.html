@@ -1,37 +1,46 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manipulation</title>
-    <link rel="stylesheets" href = "styles.css" >
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h2>Add Reminders</h2>
-    <div class = "title"></div>
+    <h1>Add Reminders</h2>
+        <div class="parent-fillout-div">
+            <form action="" id="get-reminder">
+                <div class="reminder-fillout">
+                    <label for="title-box">Enter Title: </label>
+                    <input type="text" name="title-box" id="input-box" />
+                </div>
+                <div class="reminder-fillout">
+                    <label for="reminder-box">Enter Reminder: </label>
+                    <input type="text" name="reminder-box" id="input-box" />
+                </div>
+                <div class="reminder-fillout">
+                    <label for="img-box">Enter Image Background: </label>
+                    <input type="text" name="img-box" id="input-box" />
+                </div>
+                <div class="reminder-fillout"><input type="submit" value="Click to Submit" id="submit" />
+                </div>
+            </form>
+        </div>
 
-    <form action="" id="form">
-        <label for="textBox">Enter Title: </label>
-        <input type="text" name="textBox" class="text-box"/>
-        <input type="submit" value="Click to Submit" id="submit"/>
-    </form>
-
-    <form action="" id="form">
-        <label for="textBox">Enter Reminder: </label>
-        <input type="text" name="textBox" class="text-box"/>
-        <input type="submit" value="Click to Submit" id="submit"/>
-    </form>
-
-    <form action="" id="form">
-        <label for="textBox">Enter Image Background: </label>
-        <input type="text" name="textBox" class="text-box"/>
-        <input type="submit" value="Click to Submit" id="submit"/>
-    </form>
-    <script src= index.js></script>
-<!-- make input for text for notes/reminders 
+        <div class="reminder-box">
+            <h2 class="reminder-title-h2"></h2>
+            <p class="reminder-text"></p>
+        </div>
+        <script src=index.js></script>
+        <!-- make input for text for notes/reminders 
 make input for link for background of card for notes/reminders 
 make card
 make remove button 
 no on click -->
 </body>
-</html>
 
+</html>
