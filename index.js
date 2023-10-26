@@ -11,10 +11,12 @@ const DOMSelectors  = {
 
 function addReminder(reminder) {
   const remindersContainer = DOMSelectors.reminder
-  remindersContainer.insertAdjacentHTML("afterbegin", `<div class="reminder-box">< div class="reminder-title-h2"> ${reminder.title}</div></div>` )
+  remindersContainer.insertAdjacentHTML("afterbegin", `<div class="reminder-box">< div class="reminder-title-h2"> ${reminder.title}</div> 
+  <button class="removeReminder">Remove </button> </div>`)
   DOMSelectors.form.addEventListener("submit", function(event) {
     event.preventDefault();
   });
+  
 }
 
 function imgToBackground(filloutdiv){
