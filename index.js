@@ -1,17 +1,35 @@
-const DOMSelectors  = { // {} encloses objects
+const DOMSelectors  = {   
     title: document.getElementById("title-box"),
     reminder: document.getElementById("reminder-box"),
     image: document.getElementById("img-box")
     
 }
+// Notes: 
+// queryselectorall takes all instances of repeated classes/ids
+// {} encloses objects
+
 
 function addReminder(reminder) {
-    document.querySelector(".reminders")
-    .insertAdjacentHTML("afterbegin", `<div class="card">< div class="card-title"> ${reminder.title}</div></div>` )
-    DOMSelectors.form.addEventListener("submit", function(event)) {
+  const remindersContainer = DOMSelectors.reminder
+  remindersContainer.insertAdjacentHTML("afterbegin", `<div class="reminder-box">< div class="reminder-title-h2"> ${reminder.title}</div></div>` )
+  DOMSelectors.form.addEventListener("submit", function(event) {
     event.preventDefault();
-    }
+  });
 }
+
+function imgToBackground(filloutdiv){
+  fillout-div.background-Image = url(DOMSelectors.image);
+
+}
+
+function clearInputs(){
+
+}
+function removeReminder(){
+
+}
+
+// notes
 
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
@@ -21,6 +39,16 @@ DOMSelectors.form.addEventListener("submit", function (event) {
   );
 });
 
+function backgroundAndText(background, text){
+  background.style.backgroundColor = "red";
+  text.innerHTML = "red";
+  text.style.fontSize = "40px";
+}
+backgroundAndText(DOMSelectors.img, DOMSelectors.reminder);
+// node: const qsa = (els) => document.queryselectorAll(els);
+// const nodelist = qsa('.?')
+
+// to convert from node to array: const array = Array.from(nodelist)
 
 // Using JavaScript you will allow users to input information into a form. The
 // form will then push data from a JavaScript object into the HTML through
