@@ -13,6 +13,11 @@ h1 {
     margin: 1rem;
     font-size: 3rem;    
 }
+.reminder-fillout{
+    font-size: 2rem;
+    margin: 1rem;
+    
+}
 
 .parent-fillout-div{
     padding-bottom: 2rem;
@@ -28,3 +33,4 @@ h1 {
 }
 
 /** edit divs to make fill out info big on left side and add cards on right side of screen 
+
