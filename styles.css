@@ -7,23 +7,29 @@ html,
     box-sizing: border-box;
     font-family:'Roboto', sans-serif;
     text-align: left;
+    background-color: greenyellow;
 } 
 
 h1 {
-    margin: 1rem;
-    font-size: 3rem;    
+    margin: 2rem;
+    font-size: 3.5rem;    
+    text-align: center;
 }
 .reminder-fillout{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 1rem;
-    
+    text-align: center;
+}
+
+#submit { 
+    margin: 2.5em;
+    padding: 0.5em;
 }
 
 .parent-fillout-div{
     padding-bottom: 2rem;
     margin: 1rem;
     font-size: 3rem;
-    text-align: center;
 }
 
 .fillout-div {

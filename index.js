@@ -32,7 +32,11 @@ function clearInputs(){
 
 }
 function removeReminder(){
-
+  let buttons = document.querySelectorAll ("button");
+  buttons.forEach((btn) => 
+    btn.addEventListener("click", function (event) {
+      console.log(event.target.parentElement);
+    }))
 }
 
 
