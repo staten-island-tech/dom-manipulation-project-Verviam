@@ -38,5 +38,10 @@ h1 {
     background-image: none;
 }
 
+.reminder-box {
+    margin: 2rem;
+    font-size: 2rem;
+}
+
 /** edit divs to make fill out info big on left side and add cards on right side of screen 
 

@@ -1,36 +1,13 @@
 const DOMSelectors  = {   
     title: document.getElementById("title-box"),
     reminder: document.getElementById("reminder-box"),
-    image: document.getElementById("img-box")
-    
+    image: document.getElementById("img-box"),
+    button: document.getElementById("submit")
 }
 // Notes: 
 // queryselectorall takes all instances of repeated classes/ids
 // {} encloses objects
 
-
-function addReminder(reminder) {
-  DOMSelectors.reminder.insertAdjacentHTML("afterbegin", 
-  `<div class="reminder-box">
-  <h2 class="reminder-title-h2">${DOMSelectors.title.value}</h2>
-  <p class="reminder-text">${DOMSelectors.reminder.value}</p>
-  </div>
-  
-  <button class="removeReminder">Remove </button>`)
-  DOMSelectors.form.addEventListener("submit", function(event) {
-    event.preventDefault();
-  });
-  
-}
-
-function imgToBackground(filloutdiv){
-  // fillout-div.background-Image = url(DOMSelectors.image);
-
-}
-
-function clearInputs(){
-
-}
 function removeReminder(){
   let buttons = document.querySelectorAll ("button");
   buttons.forEach((btn) => 
@@ -39,22 +16,43 @@ function removeReminder(){
     }))
 }
 
-
-// notes
-DOMSelectors.form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  console.log(DOMSelectors.firstName.value);
-  DOMSelectors.h2.forEach(
-    (el) => (el.textContent = DOMSelectors.firstName.value)
-  );
-});
+function clearInputs() {
+  DOMSelectors.title.value = "";
+  DOMSelectors.reminder.value = "";
+  DOMSelectors.image.src = "";
+}
 
 function backgroundAndText(background, text){
-  background.style.backgroundColor = "red";
-  text.innerHTML = "red";
-  text.style.fontSize = "40px";
+  background.style.backgroundImage = `url(${DOMSelectors.image.src})`;
+  text.textContent = text.value;
 }
-backgroundAndText(DOMSelectors.img, DOMSelectors.reminder);
+
+function addReminder() {
+  DOMSelectors.reminder.insertAdjacentHTML("afterbegin", 
+  `<div class="reminder-box" style= "background-image: url(${DOMSelectors.image.src});">
+    <h2 class="reminder-title-h2">${DOMSelectors.title.value}</h2>
+    <p class="reminder-desc">${DOMSelectors.reminder.value}</p>
+    <button class="removeReminder"> Remove </button>
+  </div>`) 
+  
+  clearInputs();
+  
+  const removeButton = DOMSelectors.reminder.querySelector(".removeReminder");
+  if (removeButton) { //checks for remove button
+    removeButton.addEventListener("click", function(event) {
+      console.log(event.target.parentElement)
+    })
+  }
+}
+
+DOMSelectors.button.addEventListener("click", addReminder);
+
+
+// DOMSelectors.h2.forEach(
+//  (el) => (el.textContent = DOMSelectors.firstName.value)
+//  );
+//  event.preventDefault();
+
 // node: const qsa = (els) => document.queryselectorAll(els);
 // const nodelist = qsa('.?')
 
@@ -68,3 +66,7 @@ backgroundAndText(DOMSelectors.img, DOMSelectors.reminder);
 // -Create a function that injects the newly created object into the DOM
 // -Create a function that clears the input fields after injecting the object
 // -Create a function to remove an object after they have been created
+
+// DOMSelectors.button.addEventListener("click", function () {
+//   backgroundAndText(DOMSelectors.image, DOMSelectors.reminder)); 
+// }
