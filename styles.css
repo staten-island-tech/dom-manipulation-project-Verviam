@@ -15,6 +15,7 @@ h1 {
     font-size: 3.5rem;    
     text-align: center;
 }
+
 .reminder-fillout{
     font-size: 2.5rem;
     margin: 1rem;
@@ -27,21 +28,30 @@ h1 {
 }
 
 .parent-fillout-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding-bottom: 2rem;
     margin: 1rem;
     font-size: 3rem;
 }
 
-.fillout-div {
-    padding-bottom: 2em;
-    font-size: 4em;
-    background-image: none;
-}
-
 .reminder-box {
-    margin: 2rem;
-    font-size: 2rem;
+    margin: 2rem; 
+    font-size: 3rem;
+    width: 21%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    outline: 0.2rem solid black;
+    align-items: center;
+
 }
 
-/** edit divs to make fill out info big on left side and add cards on right side of screen 
-
+.everything {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}

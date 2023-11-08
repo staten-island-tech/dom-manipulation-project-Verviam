@@ -12,20 +12,21 @@
 
 <body>
     <h1>Add Reminders</h1>
+    <div class="everything">    
         <div class="parent-fillout-div">
             <form action="" id="get-reminder">
 
                 <div class="reminder-fillout">
                     <label for="title-box">Enter Title: </label>
-                    <input type="text" name="title-box" id="input-box" />
+                    <input type="text" name="title-box" id="title-box" />
                 </div>
                 <div class="reminder-fillout">
                     <label for="reminder-box">Enter Reminder: </label>
-                    <input type="text" name="reminder-box" id="input-box" />
+                    <input type="text" name="reminder-box" id="reminder-box" />
                 </div>
                 <div class="reminder-fillout">
-                    <label for="img-box">Enter Image Background: </label>
-                    <input type="text" name="img-box" id="input-box" />
+                    <label for="img-box">Enter Image: </label>
+                    <input type="text" name="img-box" id="img-box" />
                 </div>
                 <div class="reminder-fillout">
                     <input type="submit" value="Click to Submit" id="submit" />
@@ -33,6 +34,15 @@
 
             </form>
         </div>
+        <div id="new-reminder"> 
+            <!-- <div class="reminder-box">
+                <h2 class="reminder-title-h2">${DOMSelectors.title.value}</h2>
+                <p class="reminder-desc">${DOMSelectors.reminder.value}</p>
+                <img src= "${DOMSelectors.img.src}" alt = "image" class = "new-reminder-image"/>
+                <button class="remove-reminder-button"> Remove </button>
+            </div> !-->
+        </div>
+    </div>
         <script src="index.js"></script>
 
 
