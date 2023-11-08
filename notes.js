@@ -61,3 +61,26 @@ function linearSearch(num, arr) {
 }
 
 linearSearch(0, nums);
+
+
+// install vite
+// npm i (install in project folder and cd to project folder)
+// <script type ="module" src="main.js"></script>
+// npm run dev
+
+// import './styles.css/ in js file
+
+// naming variables with css
+// :root {
+//    --dark-blue: #135cc5;
+//    --primary: var(var(--dark-blue))
+
+//    --h1: 7.594rem;
+//    }
+// body {
+//   background-color: var(--primary);
+//  }
+
+// h1 {
+//  font-size: var(--h1)
+// }

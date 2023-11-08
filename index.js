@@ -28,7 +28,7 @@ function addReminder() {
   `<div class="reminder-box">
     <h2 class="reminder-title-h2">${DOMSelectors.title.value}</h2>
     <p class="reminder-desc">${DOMSelectors.reminder.value}</p>
-    <img src= "${DOMSelectors.image.src}" alt = "image" class = "new-reminder-image"/>
+    <img src= "${DOMSelectors.image.value}" alt = "image" class = "new-reminder-image"/>
     <button class="remove-reminder-button"> Remove </button>
   </div>`) 
   
