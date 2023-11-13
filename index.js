@@ -3,7 +3,8 @@ const DOMSelectors  = {
     reminder: document.getElementById("reminder-box"),
     image: document.getElementById("img-box"),
     button: document.getElementById("submit"),
-    newReminder: document.getElementById("new-reminder")
+    newReminder: document.getElementById("new-reminder"),
+    form: document.getElementById("get-reminder")
 }
 // Notes: 
 // queryselectorall takes all instances of repeated classes/ids
@@ -36,7 +37,7 @@ function addReminder() {
   removeCard();
 }
 
-DOMSelectors.button.addEventListener("click", function(event) {
+DOMSelectors.form.addEventListener("submit", function(event) {
   event.preventDefault();
   addReminder();
 })
