@@ -29,11 +29,10 @@ h1 {
 
 .parent-fillout-div{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     padding-bottom: 2rem;
-    margin: 1rem;
     font-size: 3rem;
+    align-items: center;
+
 }
 
 .reminder-box {
@@ -46,12 +45,14 @@ h1 {
     justify-content: center;
     outline: 0.2rem solid black;
     align-items: center;
+    padding: 5em;
 
 }
 
-.everything {
+.reminder-positioning {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
+    align-items: center;
 }
+
